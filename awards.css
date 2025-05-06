@@ -1,0 +1,553 @@
+/* Awards Page Specific Styles */
+
+/* Hero Section */
+.awards-hero {
+    padding: 6rem 5% 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url('assets/WhatsApp Image 2025-04-13 at 01.39.53_bdbc71b3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+.awards-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.awards-hero .hero-content {
+    flex: 0 1 50%;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-top: -2rem;
+}
+
+.awards-hero .hero-image {
+    flex: 0 1 35%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.awards-hero .hero-image img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.awards-hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.awards-hero h1 .line-one {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #FFD700;
+    font-size: 3rem;
+}
+
+.awards-hero h1 .line-two {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 3rem;
+    color: white;
+    margin-top: -0.3rem;
+}
+
+.awards-hero h1 .highlight {
+    color: #FFD700;
+    font-weight: 500;
+}
+
+.awards-hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.awards-hero .about-features {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.awards-hero .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.awards-hero .feature-item i {
+    color: #FFD700;
+    font-size: 0.8rem;
+}
+
+.awards-hero .feature-item span {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* Alliance Awards Section */
+.alliance-awards {
+    padding: 80px 0 60px;
+    background: #f5f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.alliance-awards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 124, 128, 0.03) 0%, rgba(0, 124, 128, 0.05) 100%);
+    z-index: 0;
+}
+
+.alliance-awards .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.alliance-awards h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+/* Award Cards Section */
+.award-cards {
+    padding: 100px 0 80px;
+    background: #f5f9fa;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 40px;
+}
+
+.award-cards .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 139, 139, 0.12);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.award-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 139, 139, 0.18);
+}
+
+.award-cards .card-logo {
+    background: white;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: none;
+}
+
+.award-cards .card-logo img {
+    max-width: 85%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.award-cards .card-content {
+    background: #008B8B;
+    color: white;
+    padding: 35px;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.award-cards .card-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: white;
+    opacity: 1;
+}
+
+/* Technology Awards Section */
+.technology-awards {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.technology-awards .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.technology-awards h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.logo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.logo-row img {
+    height: 150px;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: transform 0.3s ease;
+}
+
+.logo-row img:hover {
+    transform: translateY(-8px);
+}
+
+/* Awards Timeline Section */
+.awards-timeline {
+    padding: 80px 0;
+    background: #fff;
+    position: relative;
+}
+
+.awards-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #e0e0e0;
+    top: 0;
+}
+
+.timeline-cards {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.award-card {
+    width: 45%;
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 0;
+    border-left: 4px solid #007C80;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.award-card.left {
+    float: left;
+    clear: both;
+}
+
+.award-card.right {
+    float: right;
+    clear: both;
+}
+
+.award-content {
+    padding: 25px 30px;
+}
+
+.award-content h3 {
+    font-size: 1.1rem;
+    color: #007C80;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.award-content img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 0;
+}
+
+.award-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 15px 0 0;
+}
+
+.award-date {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007C80;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: auto;
+    white-space: nowrap;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: #007C80;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #007C80;
+    z-index: 2;
+}
+
+.award-card.left .award-date {
+    right: -85px;
+}
+
+.award-card.right .award-date {
+    left: -85px;
+}
+
+.award-card.left .timeline-dot {
+    right: -142px;
+}
+
+.award-card.right .timeline-dot {
+    left: -142px;
+}
+
+.press-release {
+    display: inline-block;
+    color: #007C80;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.press-release:hover {
+    color: #005f62;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 900px;
+    }
+
+    .logo-row {
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .logo-row img {
+        height: 130px;
+    }
+
+    .technology-awards h2 {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .awards-timeline::before {
+        left: 40px;
+    }
+
+    .award-card {
+        width: calc(100% - 100px);
+        margin-left: 100px !important;
+        float: none;
+    }
+
+    .award-date {
+        left: -85px !important;
+    }
+
+    .timeline-dot {
+        left: -142px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 6rem;
+    }
+
+    .awards-hero .hero-content {
+        flex: 0 1 100%;
+    }
+
+    .awards-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .awards-hero p {
+        font-size: 1.1rem;
+    }
+
+    .award-cards {
+        padding: 60px 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .award-cards .card-logo {
+        height: 140px;
+        padding: 25px;
+    }
+
+    .award-cards .card-content {
+        padding: 20px 25px;
+        min-height: auto;
+    }
+
+    .logo-row {
+        gap: 80px;
+    }
+
+    .logo-row img {
+        height: 100px;
+    }
+
+    .awards-hero {
+        padding: 4rem 5% 6rem;
+        min-height: auto;
+    }
+
+    .awards-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .awards-hero p {
+        font-size: 1.1rem;
+    }
+
+    .awards-hero .about-features {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .award-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-card {
+        width: calc(100% - 80px);
+        margin-left: 80px !important;
+    }
+
+    .award-date {
+        left: -75px !important;
+        font-size: 0.85rem;
+    }
+
+    .timeline-dot {
+        left: -122px !important;
+        width: 14px;
+        height: 14px;
+    }
+
+    .awards-hero h1 {
+        font-size: 2rem;
+    }
+
+    .logo-row img {
+        height: 90px;
+    }
+    
+    .logo-row {
+        gap: 60px;
+    }
+
+    .technology-awards h2 {
+        font-size: 1.3rem;
+    }
+
+    .awards-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .awards-hero p {
+        font-size: 1rem;
+    }
+} 

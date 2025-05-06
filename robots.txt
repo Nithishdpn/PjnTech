@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://pjntech.com/sitemap.xml
+
+# Optimize crawling
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /cgi-bin/ 
