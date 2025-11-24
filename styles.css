@@ -2423,3 +2423,38 @@ footer {
         font-size: 14px;
     }
 } 
+
+.faq-section {
+    padding: 5rem 5% 4rem;
+    background: var(--background-light);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.faq-item p {
+    color: var(--light-text);
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 4rem 1.5rem;
+    }
+}
